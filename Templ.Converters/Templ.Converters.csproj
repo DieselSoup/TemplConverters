@@ -7,12 +7,14 @@
     <Description>A Class Library containing common Value Converters for use in Xamarin.Forms projects.</Description>
     <PackageReleaseNotes>Common converters contained in this package:
 
--StringIsNullOrEmptyToBoolConverter</PackageReleaseNotes>
+-StringIsNullOrEmptyToBoolConverter
+-InverseBoolConverter</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageIcon>templ_logo.png</PackageIcon>
     <Authors>Arthur Richardson</Authors>
     <Company>DieselSoup Solutions</Company>
     <PackageId>TemplConverters</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
