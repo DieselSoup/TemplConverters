@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>xamarin, forms, xamarinforms, xamarin.forms, .NET, converters, value-converters, binding</PackageTags>
+    <Description>A Class Library containing common Value Converters for use in Xamarin.Forms projects.</Description>
+    <PackageReleaseNotes>Common converters contained in this package:
+
+-StringIsNullOrEmptyToBoolConverter</PackageReleaseNotes>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageIcon>templ_logo.png</PackageIcon>
+    <Authors>Arthur Richardson</Authors>
+    <Company>DieselSoup Solutions</Company>
+    <PackageId>TemplConverters</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="templ_logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
