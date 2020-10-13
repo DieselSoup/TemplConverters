@@ -4,7 +4,19 @@ TempleConverters is a Class Library containing common Value Converters for use i
 
 Common converters contained in this package include:
 * InverseBoolConverter
+* NumberEqualToZeroConverter
+* NumberGreaterThanOrEqualToZeroConverter
+* NumberGreaterThanZeroConverter
+* NumberLessThanOrEqualToZeroConverter
+* NumberLessThanOrZeroConverter
 * StringIsNullOrEmptyToBoolConverter
+* StringLengthEqualsIntConverter
+* StringLengthGreaterThanIntConverter
+* StringLengthGreaterThanOrEqualToIntConverter
+* StringLengthLessThanIntConverter
+* StringLengthLessThanOrEqualToIntConverter
+* StringsMatchConverter
+
 
 # Installation
 
