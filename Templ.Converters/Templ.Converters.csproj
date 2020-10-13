@@ -6,15 +6,25 @@
     <PackageTags>xamarin, forms, xamarinforms, xamarin.forms, .NET, converters, value-converters, binding</PackageTags>
     <Description>A Class Library containing common Value Converters for use in Xamarin.Forms projects.</Description>
     <PackageReleaseNotes>Common converters contained in this package:
-
--StringIsNullOrEmptyToBoolConverter
--InverseBoolConverter</PackageReleaseNotes>
+- InverseBoolConverter
+- NumberEqualToZeroConverter
+- NumberGreaterThanOrEqualToZeroConverter
+- NumberGreaterThanZeroConverter
+- NumberLessThanOrEqualToZeroConverter
+- NumberLessThanOrZeroConverter
+- StringIsNullOrEmptyToBoolConverter
+- StringLengthEqualsIntConverter
+- StringLengthGreaterThanIntConverter
+- StringLengthGreaterThanOrEqualToIntConverter
+- StringLengthLessThanIntConverter
+- StringLengthLessThanOrEqualToIntConverter
+- StringsMatchConverter</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageIcon>templ_logo.png</PackageIcon>
     <Authors>Arthur Richardson</Authors>
     <Company>DieselSoup Solutions</Company>
     <PackageId>TemplConverters</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
