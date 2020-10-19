@@ -8,7 +8,7 @@ namespace Templ.Converters
 {
     public class NumberLessThanZeroConverter:BaseNumberValueConverter
     {
-        public new object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (!ValidateInput(value))
             {
