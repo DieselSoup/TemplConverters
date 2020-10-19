@@ -9,7 +9,7 @@ namespace Templ.Converters
 {
     public class StringLengthGreaterThanIntConverter : BaseStringLengthConverter
     {
-        public new object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (CheckForNullValues(value, parameter))
             {

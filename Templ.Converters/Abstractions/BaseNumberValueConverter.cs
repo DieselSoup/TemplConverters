@@ -9,7 +9,7 @@ namespace Templ.Converters.Abstractions
     public abstract class BaseNumberValueConverter : IValueConverter
     {
         protected float FloatValue { get; set; }
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        public virtual object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             return true;
         }
