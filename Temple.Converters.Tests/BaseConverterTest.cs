@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Text;
 using Xamarin.Forms;
 
-namespace Temple.Converters.Tests
+namespace Templ.Converters.Tests
 {
     public abstract class BaseConverterTest<T> where T:IValueConverter
     {

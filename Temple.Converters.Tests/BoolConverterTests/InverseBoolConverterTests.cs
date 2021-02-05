@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Globalization;
 using System;
 
-namespace Temple.Converters.Tests.BoolConverterTests
+namespace Templ.Converters.Tests.BoolConverterTests
 {
     public class InverseBoolConverterTests
     {

@@ -6,7 +6,7 @@ using Templ.Converters.Abstractions;
 
 namespace Templ.Converters
 {
-    class NumberLessThanOrEqualToZeroConverter : BaseNumberValueConverter
+    public class NumberLessThanOrEqualToZeroConverter : BaseNumberValueConverter
     {
         public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {

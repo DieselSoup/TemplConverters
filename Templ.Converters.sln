@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Templ.Converters", "Templ.Converters\Templ.Converters.csproj", "{8698AA8B-8445-44A5-80D5-14A29F33F8AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temple.Converters.Tests", "Temple.Converters.Tests\Temple.Converters.Tests.csproj", "{F0146685-624A-445A-BAA4-75C8C31E7B9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Templ.Converters.Tests", "Temple.Converters.Tests\Templ.Converters.Tests.csproj", "{F0146685-624A-445A-BAA4-75C8C31E7B9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

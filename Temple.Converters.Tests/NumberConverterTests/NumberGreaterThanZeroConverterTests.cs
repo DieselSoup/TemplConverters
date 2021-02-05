@@ -4,7 +4,7 @@ using Templ.Converters.Tests;
 
 namespace Templ.Converters.Tests.NumberConverterTests
 {
-    public class NumberEqualToZeroConverterTests : BaseConverterTest<NumberEqualToZeroConverter>
+    public class NumberGreaterThanZeroConverterTests:BaseConverterTest<NumberGreaterThanZeroConverter>
     {
         [SetUp]
         public override void Setup()
@@ -14,23 +14,23 @@ namespace Templ.Converters.Tests.NumberConverterTests
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_Zero_ReturnsTrue()
+        public void NumberGreaterThanZeroCoverter_Zero_ReturnsFalse()
         {
             bool zeroResult = (bool)TestConvert(0, TargetType);
 
-            Assert.True(zeroResult);
+            Assert.False(zeroResult);
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_One_ReturnsFalse()
+        public void NumberGreaterThanZeroCoverter_One_ReturnsTrue()
         {
             bool oneResult = (bool)TestConvert(1, TargetType);
 
-            Assert.False(oneResult);
+            Assert.True(oneResult);
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_NegativeOne_ReturnsFalse()
+        public void NumberGreaterThanZeroCoverter_NegativeOne_ReturnsFalse()
         {
             bool negativeOneResult = (bool)TestConvert(-1, TargetType);
 
@@ -38,19 +38,9 @@ namespace Templ.Converters.Tests.NumberConverterTests
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_doubleOne_ReturnsFalse()
+        public void NumberGreaterThanZeroCoverter_doubleOne_ReturnsTrue()
         {
             double one = 1.23456789d;
-
-            bool doubleResult = (bool)TestConvert(one, TargetType);
-
-            Assert.False(doubleResult);
-        }
-
-        [Test]
-        public void NumberEqualToZeroConverter_doubleZero_ReturnsTrue()
-        {
-            double one = 0.0000000d;
 
             bool doubleResult = (bool)TestConvert(one, TargetType);
 
@@ -58,7 +48,17 @@ namespace Templ.Converters.Tests.NumberConverterTests
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_stringZero_ReturnsInvalidCastExceptionException()
+        public void NumberGreaterThanZeroCoverter_doubleZero_ReturnsFalse()
+        {
+            double one = 0.0000000d;
+
+            bool doubleResult = (bool)TestConvert(one, TargetType);
+
+            Assert.False(doubleResult);
+        }
+
+        [Test]
+        public void NumberGreaterThanZeroCoverter_stringZero_ReturnsInvalidCastExceptionException()
         {
             try
             {
@@ -72,7 +72,7 @@ namespace Templ.Converters.Tests.NumberConverterTests
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_null_ReturnsNullReferenceExceptionException()
+        public void NumberGreaterThanZeroCoverter_null_ReturnsNullReferenceExceptionException()
         {
             try
             {

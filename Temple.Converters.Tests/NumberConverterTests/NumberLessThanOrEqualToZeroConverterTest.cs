@@ -1,10 +1,10 @@
-﻿using NUnit.Framework;
-using System;
+﻿using System;
+using NUnit.Framework;
 using Templ.Converters.Tests;
 
 namespace Templ.Converters.Tests.NumberConverterTests
 {
-    public class NumberEqualToZeroConverterTests : BaseConverterTest<NumberEqualToZeroConverter>
+    public class NumberLessThanOrEqualToZeroConverterTest:BaseConverterTest<NumberLessThanOrEqualToZeroConverter>
     {
         [SetUp]
         public override void Setup()
@@ -14,7 +14,7 @@ namespace Templ.Converters.Tests.NumberConverterTests
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_Zero_ReturnsTrue()
+        public void NumberLessThanOrEqualToZeroConverter_Zero_ReturnsTrue()
         {
             bool zeroResult = (bool)TestConvert(0, TargetType);
 
@@ -22,7 +22,7 @@ namespace Templ.Converters.Tests.NumberConverterTests
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_One_ReturnsFalse()
+        public void NumberLessThanOrEqualToZeroConverter_One_ReturnsFalse()
         {
             bool oneResult = (bool)TestConvert(1, TargetType);
 
@@ -30,15 +30,15 @@ namespace Templ.Converters.Tests.NumberConverterTests
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_NegativeOne_ReturnsFalse()
+        public void NumberLessThanOrEqualToZeroConverter_NegativeOne_ReturnsTrue()
         {
             bool negativeOneResult = (bool)TestConvert(-1, TargetType);
 
-            Assert.False(negativeOneResult);
+            Assert.True(negativeOneResult);
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_doubleOne_ReturnsFalse()
+        public void NumberLessThanOrEqualToZeroConverter_doubleOne_ReturnsFalse()
         {
             double one = 1.23456789d;
 
@@ -48,7 +48,7 @@ namespace Templ.Converters.Tests.NumberConverterTests
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_doubleZero_ReturnsTrue()
+        public void NumberLessThanOrEqualToZeroConverter_doubleZero_ReturnsTrue()
         {
             double one = 0.0000000d;
 
@@ -58,7 +58,7 @@ namespace Templ.Converters.Tests.NumberConverterTests
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_stringZero_ReturnsInvalidCastExceptionException()
+        public void NumberLessThanOrEqualToZeroConverter_stringZero_ReturnsInvalidCastExceptionException()
         {
             try
             {
@@ -72,7 +72,7 @@ namespace Templ.Converters.Tests.NumberConverterTests
         }
 
         [Test]
-        public void NumberEqualToZeroConverter_null_ReturnsNullReferenceExceptionException()
+        public void NumberLessThanOrEqualToZeroConverter_null_ReturnsNullReferenceExceptionException()
         {
             try
             {
