@@ -5,7 +5,11 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>xamarin, forms, xamarinforms, xamarin.forms, .NET, converters, value-converters, binding</PackageTags>
     <Description>A Class Library containing common Value Converters for use in Xamarin.Forms projects.</Description>
-    <PackageReleaseNotes>Common converters contained in this package:
+    <PackageReleaseNotes>New in this version:
+-ComplimentaryColorConverter
+-DarkOrLightColorConverter
+
+Common converters contained in this package:
 - InverseBoolConverter
 - NumberEqualToZeroConverter
 - NumberGreaterThanOrEqualToZeroConverter
